@@ -1,0 +1,18 @@
+.skills-container {
+  padding: 15px 0;
+}
+
+.skills-container > .skills-icon-wrapper {
+  text-align: left;
+  letter-spacing: 10px;
+  padding-bottom: 10px;
+}
+
+.skills-container > .skills-profress-container {
+  width: 100%;
+  background-color: grey;
+  color: rgb(59, 59, 13);
+}
+
+.skills-container > .skills-profress-container > .skill-progress-fill {
+}

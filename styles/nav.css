@@ -6,6 +6,9 @@
   top: 0%;
   z-index: 1;
   width: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: inset;
 }
 
 .navigation-wrapper > .links-wrappers {
@@ -30,6 +33,6 @@
 }
 
 .navigation-wrapper > .search-icon-wrapper > .nav-link:hover {
-  background-color: red;
+  background-color: rgb(136, 96, 96);
   color: white;
 }

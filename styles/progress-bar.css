@@ -8,11 +8,13 @@
   padding-bottom: 10px;
 }
 
-.skills-container > .skills-profress-container {
+.skills-container > .skill-progress-container {
   width: 100%;
   background-color: grey;
   color: rgb(59, 59, 13);
 }
 
-.skills-container > .skills-profress-container > .skill-progress-fill {
+.skills-container > .skill-progress-container > .skill-progress-fill {
+  background-color: grey;
+  text-align: center;
 }

@@ -41,6 +41,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
 
 .about-wrapper > .about-me-content > .about-content-photo-wrapper {
@@ -68,13 +69,13 @@
   padding-right: 15px;
 }
 
-.about-wrapper > .about-me-content > .about-content-photo-wrapper {
+.about-wrapper > .about-me-content > .about-content-photo-wrapper img {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 65%;
   padding-top: 25px;
-  filter: opacity(0.65);
+  filter: opacity(0.75);
 }
 
 .about-wrapper > .about-me-content > p {
@@ -82,7 +83,7 @@
   text-align: justify;
 }
 
-/* acolades */
+/* Acolades */
 
 .acolades-wrapper {
   display: flex;
@@ -97,16 +98,16 @@
 .acolades-wrapper span {
   font-size: 24px;
 }
-portfolio-bg-content
+
 /* portfolio parallax bg */
 
 .parallax-bg-container {
-  background-image: url("");
+  background-image: url("/images/nasa-usa-unsplash.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   min-height: 400px;
-  filter: grayscale(85%);
+  filter: grayscale(75%);
 }
 
 .parallax-bg-container > .parallax-bg-content {
@@ -118,3 +119,100 @@ portfolio-bg-content
   font-size: 2em;
   letter-spacing: 10px;
 }
+
+/* Portfolio Grid */
+.portfolio-items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  cursor: pointer;
+  transition: 1s ease-in-out all;
+}
+
+.portfolio-items-grid > .portfolio-image-wrapper,
+.portfolio-items-grid img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.portfolio-items-grid > .portfolio-image-wrapper:hover {
+  filter: opacity(0.5);
+}
+
+/* Contact */
+
+.contact-bg {
+  background-image: url("/images/colors-laptop-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  filter: grayscale(75%);
+}
+
+/* Contact Container */
+
+.contact-info-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-container > div {
+  padding: 15px;
+}
+
+.contact-info-container > .contact-info-right {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form {
+  margin-top: 50px;
+}
+
+.contact-info-container
+  > .contact-info-right
+  > .contact-info-form
+  > .form-group {
+  display: flex;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #616161;
+}
+
+.contact-info-container
+  > .contact-info-right
+  > .contact-info-form
+  input[type="text"]:last-child {
+  width: 100%;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form button {
+  color: white;
+  background-color: black;
+  user-select: none;
+  border: none;
+  padding: 15px;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 15px;
+  float: right;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-info-container
+  > .contact-info-right
+  > .contact-info-form
+  button:hover {
+  color: black;
+  background-color: rgb(195, 186, 186);
+  transition: all;
+}
+
+/* Footer */
